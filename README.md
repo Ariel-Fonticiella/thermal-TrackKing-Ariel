@@ -21,7 +21,7 @@ HackRiddle 2017 is a 24-hour hackathon at Embry-Riddle Aeronautical University i
 
 ## Motivation
 To read about this project, please click the following link:
-* [About Project](http://izaguir.re/thermal-trackking/)
+* [About Project](https://devpost.com/software/thermal-trackking)
 
 
 &nbsp;
@@ -41,7 +41,7 @@ To read about this project, please click the following link:
 
 To view this application live, please click the following link:
 
-* [View Project](https://ianizaguirre.github.io/thermal-TrackKing/)
+* [View Project](https://ariel-fonticiella.github.io/thermal-TrackKing-Ariel/)
 
 
 &nbsp;
