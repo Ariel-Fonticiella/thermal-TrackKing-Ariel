@@ -1,0 +1,405 @@
+body {
+	width: 90%;
+	margin: 0 auto;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 1.4;
+	background-color: #222;
+}
+
+header {
+	background-color: #ffffff;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 1px 0 rgba(0, 0, 0, 0.12), 0 1px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+
+nav {
+	background-color: #39495C;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+nav a {
+	color: rgba(255, 255, 255, 0.5);
+	padding: 10px 15px;
+	font-size: 14px;
+	font-weight: 400;
+	cursor: pointer;
+	border-width: 0 0 2px;
+	border-radius: 2px;
+	transition: color 300ms 0s ease;
+}
+
+nav a:hover {
+	background-color: rgba(0, 0, 0, 0.2);
+	color: #ffffff;
+}
+
+nav li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.timer {
+	color: rgba(255, 255, 255, 0.5);
+	padding: 10px 15px 10px 5px;
+	font-size: 30px;
+	font-weight: 500;
+	transition: color 300ms 0s ease;
+	margin: 0;
+	display: inline-block;
+}
+button {
+	font-size: 13px;
+	text-shadow: none;
+	color: #5bc0de;
+	padding: 5px 15px;
+	line-height: 1.4;
+	vertical-align: middle;
+	display: inline-block;
+	cursor: pointer;
+	border: 1px solid #5bc0de; /*1px solid transparent;*/
+	border-radius: 4px;
+	background-color: #f3f3f3;
+	transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, width 0.3s ease, opacity 0.3s ease;
+	outline: none;
+	white-space: nowrap;
+	top: 0px;
+	position: relative;
+}
+button:hover {
+	color: #85D0D2;
+	border-color: #85D0D2;
+}
+button:active {
+	top: 1px;
+}
+
+.wrapper {
+	margin: 0 auto;
+	background-color: #EDF0F1;
+	width: 100%;
+}
+
+h1 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.avatars-row {
+	padding: 15px 25px 7px 25px;
+	justify-content: space-between;
+	height: 150px;
+}
+
+.logo {
+    width: 115px;
+    background-image: url(../images/logo.png);
+    background-size: 145%;
+    vertical-align: baseline;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.circle-container {
+    width: 85px;
+    height: 85px;
+    align-self: center;
+    background-image: url(../images/avatar.png);
+    border-radius: 50%;
+    background-size: 100%;
+    vertical-align: baseline;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+.outside-timer-text {
+    color: #27ae60;
+    margin: 0 auto;
+    text-transform: none;
+    font-size: 15px;
+    display: inline-block;
+}
+.time-wrap {
+	text-align: center;
+}
+
+/* Globals */
+.flex-container {
+	display: flex;
+}
+
+/* Flex Box Unit */
+
+.rows-wrap {
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.row1, .row2, .row3 {
+	flex-direction: column;
+	flex-wrap: nowrap;
+	margin-bottom: 15px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+
+
+.row3 {
+	text-align: center;
+	justify-content: space-evenly;
+}
+
+
+.critical-area {
+	border: 1px solid black;
+	border-radius: 15px;
+	margin: 0 auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	width: 1067px;
+	padding-bottom: 71px;
+}
+
+.card-container {
+	margin-top: 60px;
+	width: 500px;
+	height: auto;
+
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+}
+
+.card-container {
+	background-color: #fff; /* #95a5a6;*/
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    transition: opacity .15s linear;
+}
+
+h3.card-name{
+	background-color: #3498db;
+	color: #fff;
+
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: .5px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    height: 58px;
+    line-height: 58px;
+    padding: 0 30px;
+}
+
+
+.content-wrapper {
+	padding: 0 30px;
+	justify-content: space-evenly;
+}
+
+.card-content-left {
+	padding: 15px 15px 15px 0;
+	display: flex;
+	flex-direction: column;
+}
+.card-content-right {
+    padding: 15px 10px 0 15px;
+    background: #f5f5f5;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    margin-left: 37px;
+    display: flex;
+    flex-direction: column;
+}
+.card-content-chart {
+	margin-top: 15px;
+    margin-left: 15px;
+}
+
+.monitor-btn {
+	color: #333;
+	border: 1px solid #ccc;
+	background-color: #fff;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+/*	-webkit-box-shadow:0 0 11px #51A629;
+  -moz-box-shadow: 0 0 11px #51A629;
+  box-shadow:0 0 11px #51A629;*/
+
+.monitor-btn:hover {
+	opacity: 0.7;
+	color: #333;
+	border: 1px solid #ccc;
+	background-color: #fff;
+}
+
+.monitor-btn-red {
+	color: #333;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	-webkit-box-shadow:0 0 11px #E53D36;
+  -moz-box-shadow: 0 0 11px #E53D36;
+  box-shadow:0 0 11px #E53D36;
+}
+
+.card-data-big-pulse {
+	font-weight: 500;
+	font-size: 40px;
+	padding-right: 8px;
+	padding-left: 10px;
+}
+.card-data-big-pulse::after {
+    font-size: 21px;
+    content: 'BPMs';
+    font-weight: 300;
+    padding-left: 1px;
+    font-size: 14px;
+}
+
+.card-data-small {
+	font-weight: 500;
+	font-size: 18px;
+/*	display: flex;*/
+display: none;    /* ------------- Dont need this so far */
+}
+.arrow {
+	padding-left: 5px;
+}
+
+.card-data-big-temp {
+	font-weight: 500;
+	font-size: 40px;
+	padding-right: 8px;
+	padding-left: 10px;
+	display: flex;
+}
+.card-data-big-temp::after {
+    font-size: 21px;
+    content: '℉';
+}
+
+.card-data-monitor {
+	font-weight: 500;
+	font-size: 24px;
+	padding-right: 8px;
+	padding-left: 10px;
+	display: flex;
+}
+
+/* BackEnd Lights */
+
+.status-okay {
+	background-color: #27ae60 !important;
+	color: #ffffff !important;
+}
+.status-danger {
+	background-color: #d35400 !important;
+	color: #ffffff !important;
+}
+
+/* ---------- Heart Beating */
+.fa-beat {
+  animation: fa-beat 5s ease infinite;
+}
+@keyframes fa-beat {
+  0% {
+    transform:scale(1);
+  }
+  5% {
+    transform:scale(1.25);
+  }
+  20% {
+    transform:scale(1);
+  }
+  30% {
+    transform:scale(1);
+  }
+  35% {
+    transform:scale(1.25);
+  }
+  50% {
+    transform:scale(1);
+  }
+  55% {
+    transform:scale(1.25);
+  }
+  70% {
+    transform:scale(1);
+  }
+}
+
+.heart {
+  color:red;
+  display: inline-block;
+  padding-left: 2px;
+}
+.therm {
+  color:red;
+  display: inline-block;
+  padding-left: 22px;
+}
+.info {
+  color: #cccccc;
+  opacity: 0.9;
+  display: inline-block;
+  padding-left: 25px;
+  padding-bottom: 5px;
+}
+/* ---------- Heart Beating  ---- END --- */
+
+footer {
+	background-color: #39495C;
+	padding-bottom: 25px;
+}
+
+.container {
+  width: 80%;
+  margin: 20px auto;
+}
+
+
+.hide-this {
+	display: none;
+}
+
+.loader-hides-this {
+	background: lightgray;
+	opacity: 0;
+}
+
+/* --------- Legend --------*/
+.legend {
+	list-style: none;
+}
+
+.legend span {
+	border: 1px solid #ccc;
+	float: left;
+	width: 12px;
+	height: 12px;
+	margin: 2px;
+}
+
+.legend .heart {
+	background-color: #F2C732;
+	margin-top: 15px;
+}
+
+.legend .temp {
+	background-color: #65B6DE;
+	margin-top: 15px;
+}
+
+.legend {
+	margin-right: 850px;
+	line-height: 40px;
+}
