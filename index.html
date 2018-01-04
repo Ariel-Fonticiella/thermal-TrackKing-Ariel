@@ -261,7 +261,7 @@
         <div class="circle-wrapper">
        		 <div class="circle"> <div class="logo-loader"><img src="./images/logo.png" style="width:250px; height:250px;" /></div> </div>
         </div>
-    
+
 		<div id="loader"></div>
 	</div>
 
@@ -270,7 +270,7 @@
 <script defer src="FontAwesomeJs/fontawesome.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
 <script
-  src="http://code.jquery.com/jquery-3.2.1.min.js"
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
 
@@ -284,10 +284,10 @@
 <script>
 	"use strict";
 
-var socket = io('http://8cffa854.ngrok.io');
+var socket = io('https://8cffa854.ngrok.io');
 socket.on('connect',()=>{
   console.log('Connected');
-  
+
 });
 socket.on('temp-ui', (data)=>{
     console.log(data.temp);
